@@ -1,0 +1,45 @@
+{
+    "application": {
+        "name": "CrowdTrace",
+        "favicon": {
+            "path": "images/favicon/crowd.png"
+        },
+        "logo": {
+            "path": "images/logo/crowd.svg"
+        },
+        "github": {
+            "url": "https://github.com/iosifache/CrowdTrace"
+        }
+    },
+    "inputs": {
+        "labels": {
+            "datacenter_url": "Datacenter URL",
+            "beacons_interval": "Beacons Interval"
+        },
+        "formats": {
+            "interval": "HH:mm:ss"
+        },
+        "validation_rules": {
+            "firebase_url": "[a-zA-Z-]*[.]firebaseapp[.]com"
+        }
+    },
+    "buttons": {
+        "captions": {
+            "start": "Start",
+            "stop": "Stop"
+        }
+    },
+    "texts": {
+        "made_with": [
+            "Made with",
+            "and"
+        ],
+        "project_on": "Project on"
+    },
+    "toasts": {
+        "invalid_firebase_url": {
+            "message": "Invalid Firebase URL",
+            "duration": 500
+        }
+    }
+}

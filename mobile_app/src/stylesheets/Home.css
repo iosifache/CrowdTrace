@@ -1,0 +1,75 @@
+*{
+    font-family: 'Roboto', sans-serif;
+}
+
+:root{
+    --dark-grey: #2d3436;
+    --red: #e74c3c;
+    --blue: #2980b9;
+    --green: #16a085;
+    --ion-color-primary: var(--dark-grey) !important;
+}
+
+.logo-image{
+    height: 25px;
+    margin-left: 20px;
+    float: left;
+}
+
+.logo-title{
+    font-weight: 700;
+}
+
+.startButton{
+    margin-top: 10px;
+}
+
+.start-icon, .stop-icon{
+    font-size: 10px;
+}
+
+.start-icon{
+    color: var(--green);
+}
+
+.stop-icon{
+    color: var(--red);
+}
+
+ion-segment{
+    margin-top: -8px;
+}
+
+ion-segment ion-segment-button ion-label{
+    margin-bottom: 0 !important;
+}
+
+ion-footer.footer-md::before{
+    background-image: none !important;
+}
+
+ion-footer{
+    padding-bottom: 10px;
+    text-align: center;
+    font-weight: 300;
+}
+
+ion-footer ion-icon{
+    font-size: 12px;
+}
+
+.logo-ionic-icon{
+    color: var(--blue);
+}
+
+.heart-icon{
+    color: var(--red);
+}
+
+.github-icon{
+    color: #000;
+}
+
+ion-toast toast-bottom{
+    margin-bottom: 100px;
+}
