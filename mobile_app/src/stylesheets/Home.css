@@ -8,6 +8,7 @@
     --blue: #2980b9;
     --green: #16a085;
     --ion-color-primary: var(--dark-grey) !important;
+    --ion-border-grey: #e8e8e8;
 }
 
 .logo-image{
@@ -20,8 +21,12 @@
     font-weight: 700;
 }
 
-.startButton{
-    margin-top: 10px;
+.bottom-border{
+    border-bottom: 1px solid var(--ion-border-grey);
+}
+
+.bottom-border-dashed{
+    border-bottom-style: dashed;
 }
 
 .start-icon, .stop-icon{
