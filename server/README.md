@@ -1,5 +1,5 @@
 ## How to run
-* source ./workenv/bin/activate
+* source ./workenv/bin/activate ( e cam degeaba workenv asta oricum :D) 
 * python ./db_scan_test.py 100 0.0008 3
 
 ### db_scan_test arguments:
