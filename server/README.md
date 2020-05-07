@@ -5,7 +5,7 @@
 ### db_scan_test arguments:
 
 1. number of points to be generated
-2. distance between two points to be consider in the same cluster ( it's a strange longitude-latitude degrees combination so far so take it is)
+2. distance between two points to be consider in the same cluster ( it's a strange longitude-latitude degrees combination so far so take it as it is)
 3. minimum number of points to form a cluster
 
 ## Algorithm explained
