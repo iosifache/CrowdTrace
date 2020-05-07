@@ -2,7 +2,7 @@ from firebase import firebase
 from generate_points import *
 from db_scan import *
 import time
-
+import sys
 
 fire = firebase.FirebaseApplication('https://crowdtrace-database.firebaseio.com/', None)
 
@@ -140,4 +140,10 @@ def start_server(update_time, regenerate_points, max_dist, min_point_nr):
 # fire.delete('features/', None)
 # upload_initial_points(100)
 
-start_server(3,True, 0.0008, 3)
+
+if __name__ == "__main__":
+
+    if sys.argv[3] == 1:
+        start_server(sys.argv[0],False, sys.argv[1], sys.argv[2])
+    else:
+        start_server(sys.argv[0],True, sys.argv[1], sys.argv[2])

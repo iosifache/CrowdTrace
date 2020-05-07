@@ -113,11 +113,12 @@ def plot_points_on_map(cl_list):
     y_array = []
     z_array = []
     counter = 0 
-   
+
     for i in cl_list:
-        x_array.append(i.center_lon)
-        y_array.append(i.center_lat)
+        x_array.append(i.center_lat)
+        y_array.append(i.center_lon)
         z_array.append(i.points)
+
 
     fig = go.Figure(go.Densitymapbox(lat=x_array, lon=y_array, z=z_array, 
                                  radius=z_array))
