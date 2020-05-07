@@ -11,7 +11,7 @@
 ## Algorithm explained
 1. generates/pull sets of points
 2. applies st-dbscan and assigns each point a cluster id; if the point represents<br> noise it will have cluster id "0"
-3. cluster objects are created by parsing to points list<br>
+3. cluster objects are created by parsing the points list<br>
 each cluster stores the total number of points and it's extreme coordinates 
 <br> (maximum and minimum values of latitude/longitude )
 4. cluster pseudo-centers are calculated based on their extreme points in the following way :<br>
