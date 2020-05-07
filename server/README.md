@@ -1,7 +1,7 @@
 ## How to run :running:
 * source ./workenv/bin/activate ( e cam degeaba workenv asta oricum :D) 
 * python ./db_scan_test.py 100 0.0008 3 (should plot clusters on a map)
-* python ./databse.py 3  0.0008 3 0 (updates points and cluster in firebase)
+* python ./databse.py 3  0.0008 3 0 (updates points and cluster in firebase) :fire:
 <br>database.py arguments:
     - first : refresh database rate in seconds
     - second : distance between two points to be consider in the same cluster
@@ -9,7 +9,7 @@
     - forth: !Optional!  set to 1 if you don't want to regenerate points using our algorithm<br>
     set to any other value to regenerate points coordinates
 
-## Small documentation:
+## Small documentation: :page_with_curl:
 ### database: 
 1. start_server (update_time, regenerate_points, max_dist, min_point_nr)<br>
     * update_time - time interval between two firebase interogations
