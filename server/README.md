@@ -2,6 +2,12 @@
 * source ./workenv/bin/activate
 * python ./db_scan_test.py 100 0.0008 3
 
+## Summary:
+    1. ST-DBSCAN implementation
+    2. Server implementation
+    3. Auxiliar functions
+
+
 ### db_scan_test arguments:
 
 1. number of points to be generated

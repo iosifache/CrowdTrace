@@ -1,13 +1,16 @@
 import random
 from datetime import datetime
+import math
 import json
+import uuid
+import time
 from db_scan import Point, Cluster
 import plotly.graph_objects as go
 
 root_coordinates = [44.42733072016657, 26.103258285766596] #piata unirii BuChArEsT
 lon_range = [26.07, 26.15] #rangeul Bucurestiului longitudinal
 lat_range = [44.40, 44.460001] #rangeul Bucurestiului latitudinal
-max_lat = 0.009 # 1 km convertit in grade latitudinale ( sper ca e corect spus)
+max_lat = 0.009 #aprox 1 km convertit in grade latitudinale ( sper ca e corect spus)
 
 lat = []
 lon = []
@@ -18,8 +21,10 @@ def generate_points(point_number): #generate first set of points
     random.seed(datetime.now())
 
     for _ in range(0, int(point_number)):
-        lat,lon = _generate_new_coord(root_coordinates[0], root_coordinates[1])
+        lat,lon = generate_new_coord(root_coordinates[0], root_coordinates[1])
         point = Point(lat,lon)
+        point.set_point_uuid(str(uuid.uuid4()))
+        point.set_point_timestamp(int(round(time.time() * 1000)))
         point_list.append(point)
 
     return point_list
@@ -28,10 +33,12 @@ def generate_points(point_number): #generate first set of points
 def new_coordinates(points_list):  #regenrate points starting from old coordinates
 
     for _ in points_list:
-        _.lat, _.lon = _generate_new_coord(_.lat,_.lon)
+        _.lat, _.lon = generate_new_coord(_.lat,_.lon)
+        _.cluster = 0
+        _.set_point_timestamp(int(round(time.time() * 1000)))
 
 
-def _generate_new_coord(old_lat,old_lon):
+def generate_new_coord(old_lat,old_lon):
 
     new_lat = random.uniform(-0.00880, 0.00880) #generate new latitude point movement ( up to 1 km range)
     final_lat = new_lat + old_lat
@@ -128,11 +135,11 @@ def plot_points_on_map(cl_list):
 
 
 def conv_lat_to_km(lat):
-    return lat*111
+    return lat*111.32
 
 
-def conv_lon_to_km(lon):
-    return lon*88
+def conv_lon_to_km(lon, lat):
+    return 40075*math.cos(lat)/360
 
 
 def convert_lat_to_lon(lat): #conversie lat-logitude

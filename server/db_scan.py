@@ -1,6 +1,5 @@
 import math
-from scipy.spatial import cKDTree
-from scipy import inf
+
 
 class Cluster(object):
     
@@ -16,7 +15,7 @@ class Point(object):
     
     cluster_label = 0 #static variable
 
-    def __init__(self,lon,lat):
+    def __init__(self,lat,lon):
         self.lon = lon
         self.lat = lat
         self.cluster = 0 # 0-the point doesn't belong to any cluster
@@ -28,6 +27,12 @@ class Point(object):
     def get_lat(self):
         return self.lat
     
+    def set_point_uuid(self, id):
+        self.uuid = id
+    
+    def set_point_timestamp(self, timestamp):
+        self.timestamp = timestamp
+        
     def get_lon(self):
         return self.lon
 
