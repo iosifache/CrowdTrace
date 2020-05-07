@@ -9,7 +9,7 @@
     - forth: !Optional!  set to 1 if you don't want to regenerate points using our algorithm<br>
     set to any other value to regenerate points coordinates
 
-:page_with_curl: ## Small documentation: 
+## Small documentation: :page_with_curl:
 ### database: 
 1. start_server (update_time, regenerate_points, max_dist, min_point_nr)<br>
     * update_time - time interval between two firebase interogations
