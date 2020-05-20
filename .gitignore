@@ -1,2 +1,6 @@
+mobile_app/.gradle
+mobile_app/android
 mobile_app/build
 mobile_app/node_modules
+mobile_app/resources
+*.pyc

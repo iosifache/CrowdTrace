@@ -1,6 +1,7 @@
 // Import libraries
-import React, {useState} from "react"
+import React, {useState, useEffect} from "react"
 import firebase from "firebase"
+import {Plugins} from '@capacitor/core';
 import {Geolocation} from "@ionic-native/geolocation"
 import WebFont from "webfontloader"
 
@@ -55,6 +56,11 @@ WebFont.load({
     }
 })
 
+// Add listnerfor back button
+Plugins.App.addListener("backButton", function(){
+	Plugins.App.exitApp()
+})
+
 // Define Home component
 const Home: React.FC = () => {
 
@@ -65,8 +71,18 @@ const Home: React.FC = () => {
 	var firebaseApp: firebase.app.App
 	var userID: string
 
+	// Function that closes the splash screen
+	useEffect(() => {
+
+		Plugins.SplashScreen.hide()
+
+	})
+
 	// Function that beacon
-	const beacon = () => {
+	const beacon = async () => {
+
+		// Log
+		console.log("Inside beaconing function ")
 
 		Geolocation.getCurrentPosition().then(data => {
 
@@ -77,28 +93,43 @@ const Home: React.FC = () => {
 			location_object.properties.id = userID
 			location_object.properties.timestamp = (new Date()).getTime()
 
+			// Log
+			console.log("Coordinates are: (" + data.coords.latitude + ", " + data.coords.longitude + ")")
+
 			// Push object to database
 			firebaseApp.database().ref("features").push(location_object)
 
-		})
+		}).catch((error) => {
+
+			// Log
+			console.log("Error getting location: " + error)
+
+		});
 
 	}
 	
 	// Function that starts beaconing
 	const startBeaconing = () => {
 
-		// Check if a datacenter was selected
+		// Check if a datacenter was selected || (new Date(beaconingInterval)).getMinutes() == 0 && (new Date(beaconingInterval)).getMinutes() == 0
 		if (!datacenter || !beaconingInterval){
 			setShowToast(true)
 			return
 		}
 		else{
 
-			// Avoid TypeScript error for invalid type
-			if (isKeyof(configuration.database.configs, datacenter)){
+			// Compute and check interval
+			var date = new Date(beaconingInterval)
+			var interval_in_miliseconds = 1000 * (60 * date.getMinutes() + date.getSeconds())
+			if (interval_in_miliseconds === 0){
+				setShowToast(true)
+				return
+			}
+			else if (isKeyof(configuration.database.configs, datacenter)){
 
-				// Init Firebase app
-				firebaseApp = firebase.initializeApp(configuration.database.configs[datacenter])
+				// Init Firebase app if needed
+				if (!firebase.apps.length)
+					firebaseApp = firebase.initializeApp(configuration.database.configs[datacenter])
 
 				// Try anonymous sign in
 				firebase.auth().signInAnonymously().catch(function(error){
@@ -111,14 +142,14 @@ const Home: React.FC = () => {
 
 					if (user){
 						userID = user.uid
-						console.log(userID)
+						
+						// Log
+						console.log("The user ID is: " + userID)
+						console.log("The selected interval is: " + interval_in_miliseconds)
+
 					}
 		
 				});
-
-				// Compute interval
-				var date = new Date(beaconingInterval)
-				var interval_in_miliseconds = 1000 * (3600 * date.getHours() + 60 * date.getMinutes() + date.getSeconds())
 
 				// Call beaconing function
 				intervalID = setInterval(beacon, interval_in_miliseconds)
@@ -152,17 +183,16 @@ const Home: React.FC = () => {
 
 			{/* Header */}
 			<IonHeader>
+
 				<IonToolbar>
 
-					{/* Logo */}
-					<IonImg src={configuration.application.logo.path} className="logo-image"/>
-
-					{/* Title */}
 					<IonTitle className="logo-title">
+						<IonImg src={configuration.application.logo.path} className="logo-image"/>
 						{configuration.application.name}
 					</IonTitle>
 
 				</IonToolbar>
+
 			</IonHeader>
 
 			{/* Main content */}
@@ -178,12 +208,12 @@ const Home: React.FC = () => {
 					</IonItem>
 					<IonRadioGroup value={datacenter} onIonChange={e => setDatacenter(e.detail.value)}>
 
-						{configuration.radios.datacenters.map(element => {
+						{configuration.radios.datacenters.map((element, key) => {
 
 							var class_name = (element.is_last) ? "bottom-border" : ""
 
 							return (
-								<IonItem lines="none" className={class_name}>
+								<IonItem lines="none" className={class_name} key={key}>
 									<IonLabel>{element.label}</IonLabel>
 									<IonRadio slot="start" value={element.value} disabled={element.is_disabled}/>
 								</IonItem>
@@ -201,7 +231,8 @@ const Home: React.FC = () => {
 						<IonDatetime 
 							displayFormat={configuration.inputs.formats.interval} 
 							pickerFormat={configuration.inputs.formats.interval}
-							value={beaconingInterval} 
+							value={beaconingInterval}
+							minuteValues={configuration.inputs.possible_values.minutes}
 							onIonChange={e => setBeaconingInterval(e.detail.value!)}
 						/>
 					</IonItem>

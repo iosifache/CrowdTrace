@@ -3,6 +3,7 @@
 	"version": "0.0.1",
 	"private": true,
 	"dependencies": {
+		"@capacitor/android": "^2.0.2",
 		"@capacitor/core": "2.0.2",
 		"@ionic-native/core": "^5.24.0",
 		"@ionic/react": "^5.0.7",
@@ -33,6 +34,8 @@
 	},
 	"scripts": {
 		"start": "react-scripts start",
+		"resources": "capacitor-resources -p android",
+		"move_resources": "node scripts/resources.js",
 		"build": "react-scripts build",
 		"test": "react-scripts test",
 		"eject": "react-scripts eject"

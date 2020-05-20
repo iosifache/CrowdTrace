@@ -1,8 +1,21 @@
 {
-	"appId": "io.ionic.starter",
+	"appId": "com.crowdtrace.app",
 	"appName": "CrowdTrace",
 	"bundledWebRuntime": false,
 	"npmClient": "npm",
 	"webDir": "build",
-	"cordova": {}
+	"cordova": {},
+	"plugins": {
+		"SplashScreen": {
+			"launchShowDuration": 10000,
+			"launchAutoHide": true,
+			"backgroundColor": "#fff",
+			"androidSplashResourceName": "splash",
+			"androidScaleType": "CENTER_CROP",
+			"spinnerColor": "#999999",
+			"showSpinner": false,
+			"splashFullScreen": true,
+			"splashImmersive": true
+		}
+	}
 }

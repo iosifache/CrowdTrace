@@ -1,8 +1,8 @@
 {
-  "name": "CrowdTrace",
-  "integrations": {
-    "capacitor": {}
-  },
-  "type": "react",
-  "id": "71de7bab"
+	"name": "CrowdTrace",
+	"integrations": {
+		"capacitor": {}
+	},
+	"type": "react",
+	"id": "71de7bab"
 }
