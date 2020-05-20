@@ -28,7 +28,7 @@
 | **Ionic Framework and Capacitor** | SDK pentru dezvoltare de aplicatii mobile cross-platform                      | [website](https://ionicframework.com)                                    |
 | **React Helmet**                  | librarie pentru React.js pentru schimbari in head-ul documentului             | [Github repository](https://github.com/nfl/react-helmet)                 |
 | **Web Font Loader**               | librarie pentru React.js pentru incarcare de font-urilor                      | [Github repository](https://github.com/typekit/webfontloader)            |
-| **@dalezak Resources Generator**  | script de Node.js pentru mutarea resurselor generate pentru Capacitor         | [Gist](https://gist.github.com/dalezak/a6b1de39091f4ace220695d72717ac71) |
+| **Resources Generator**           | script de Node.js pentru mutarea resurselor generate pentru Capacitor         | [Gist](https://gist.github.com/dalezak/a6b1de39091f4ace220695d72717ac71) |
 | **capacitor-resources**           | tool CLI pentru generarea de icons pentru Capacitor                           | [Github repository](https://github.com/leopq/capacitor-resources)        |
 | **Firebase**                      | conector pentru baza de date NoSQL                                            | [website](https://firebase.google.com)                                   |
 | **FlatIcon**                      | website de pe care a fost preluat logo-ul                                     | [website](https://www.flaticon.com)                                      |

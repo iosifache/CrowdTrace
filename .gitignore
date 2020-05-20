@@ -1,6 +1,10 @@
+# For server
+server/workenv
+*.pyc
+
+# For mobile app
 mobile_app/.gradle
 mobile_app/android
 mobile_app/build
 mobile_app/node_modules
 mobile_app/resources
-*.pyc
