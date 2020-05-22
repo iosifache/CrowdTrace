@@ -37,7 +37,7 @@
 			},
 			"type" : "Feature"
 		}
-	  },
+	},
 	"inputs": {
 		"labels": {
 			"datacenter_url": "Datacenter",

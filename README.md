@@ -14,6 +14,8 @@
 	- implementare in *Ionic React*
 	- permisiune pentru acces la *GPS*
 	- interactiune directa cu baza de date pentru inserarea de locatii
+4. **live map**
+	- afisarea in timp real a locatiilor utilizatorilor si a clusterelor
 
 ## Resurse :inbox_tray:
 
@@ -26,8 +28,9 @@
 | Nume                              | Tip                                                                           | Link                                                                     |
 |-----------------------------------|-------------------------------------------------------------------------------|--------------------------------------------------------------------------|
 | **Ionic Framework and Capacitor** | SDK pentru dezvoltare de aplicatii mobile cross-platform                      | [website](https://ionicframework.com)                                    |
-| **React Helmet**                  | librarie pentru React.js pentru schimbari in head-ul documentului             | [Github repository](https://github.com/nfl/react-helmet)                 |
-| **Web Font Loader**               | librarie pentru React.js pentru incarcare de font-urilor                      | [Github repository](https://github.com/typekit/webfontloader)            |
+| **React**                         | librarie de JavaScript pentru dezvoltarea de interfete grafice                | [website](https://reactjs.org)                                           |
+| **React Helmet**                  | librarie de React pentru schimbari in `<head>`-ul documentului                | [Github repository](https://github.com/nfl/react-helmet)                 |
+| **Web Font Loader**               | librarie de React pentru incarcare de font-urilor                             | [Github repository](https://github.com/typekit/webfontloader)            |
 | **Resources Generator**           | script de Node.js pentru mutarea resurselor generate pentru Capacitor         | [Gist](https://gist.github.com/dalezak/a6b1de39091f4ace220695d72717ac71) |
 | **capacitor-resources**           | tool CLI pentru generarea de icons pentru Capacitor                           | [Github repository](https://github.com/leopq/capacitor-resources)        |
 | **Firebase**                      | conector pentru baza de date NoSQL                                            | [website](https://firebase.google.com)                                   |
@@ -41,6 +44,16 @@
 | **Uber Apk Signer**               | tool CLI pentru semnare, aliniere zip si verificare de `.apk`                 | [Github](https://github.com/patrickfav/uber-apk-signer)                  |
 | **Android Debug Bridge**          | tool CLI pentru comunicarea cu device-uri Android                             | [website](https://developer.android.com/studio/command-line/adb)         |
 | **click**                         | modul de Python pentru CLI                                                    | [website](https://click.palletsprojects.com/en/7.x)                      |
+
+### Pentru Live Map
+
+| Nume                              | Tip                                                                           | Link                                                                     |
+|-----------------------------------|-------------------------------------------------------------------------------|--------------------------------------------------------------------------|
+| **React**                         | librarie de JavaScript pentru dezvoltarea de interfete grafice                | [website](https://reactjs.org)                                           |
+| **react-map-gl**                  | librarie de React pentru crearea de harti Mapbox                              | [website](http://visgl.github.io/react-map-gl)                           |
+| **React Icons**                   | librarie de React pentru importarea de icons                                  | [website](https://react-icons.github.io/react-icons)                     |
+| **React Helmet**                  | librarie de React pentru schimbari in `<head>`-ul documentului                | [Github repository](https://github.com/nfl/react-helmet)                 |
+| **Firebase**                      | conector pentru baza de date NoSQL                                            | [website](https://firebase.google.com)                                   |
 
 ### Altele
 

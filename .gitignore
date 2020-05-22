@@ -8,3 +8,7 @@ mobile_app/android
 mobile_app/build
 mobile_app/node_modules
 mobile_app/resources
+
+# For live map
+live_map/node_modules
+live_map/build

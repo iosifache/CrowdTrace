@@ -1,0 +1,22 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+:root{
+	--green: #2ecc71;
+}
+
+#MapContainer{
+	width: 100%;
+	height: 100%;
+}
+
+#MapContainer .mapboxgl-map .mapboxgl-ctrl{
+	display: none !important;
+}
+
+#MapContainer .point-marker{
+	color: var(--green);
+	font-size: 5px;
+}

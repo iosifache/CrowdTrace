@@ -1,0 +1,34 @@
+{
+	"application": {
+		"name": "CrowdTrace",
+		"favicon": {
+			"path": "images/favicon/crowd.png"
+		}
+	},
+	"database": {
+        "displayed_datacenter": "STS",
+		"configs": {
+			"STS": {
+				"apiKey": "AIzaSyDw9Xb_IA4TG7onZ-jkaVPz7QnlZjA4mTA",
+				"authDomain": "crowdtrace-database.firebaseapp.com",
+				"databaseURL": "https://crowdtrace-database.firebaseio.com",
+				"projectId": "crowdtrace-database",
+				"storageBucket": "crowdtrace-database.appspot.com",
+				"messagingSenderId": "1093308673451",
+				"appId": "1:1093308673451:web:ee313942165333550f76ee"
+			}
+        }
+    },
+    "map": {
+        "initial_location": {
+            "latitude": 44.4325,
+            "longitude": 26.103889,
+            "zoom": 13
+        },
+        "gradient_colors": {
+            "first": "f1c40f",
+            "second": "e74c3c"
+        },
+        "max_elements_in_cluster": 100
+    }
+}
