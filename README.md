@@ -8,4 +8,4 @@ CrowdTrace este o **solutie de monitorizare voita a maselor de persoane**, in co
 
 ## Documentatie
 
-Pentru mai multe detalii referitoare la proiect, va rugam sa accesati Wiki-ul, folosing acest [link](wiki)
+Pentru mai multe detalii referitoare la proiect, va rugam sa accesati Wiki-ul, folosing acest [link](https://github.com/iosifache/CrowdTrace/wiki)
