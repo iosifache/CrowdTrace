@@ -62,15 +62,20 @@ class LiveMap extends React.Component{
 					const data = snapshot.val()
 					var clusters = []
 					var points = []
+					var database_clusters
 
-					data.clusters.forEach(cluster => {
-						clusters.push({
-							latitude: cluster.center.lat,
-							longitude: cluster.center.lon,
-							elements: cluster.elements
+					if (data.clusters && data.clusters.length !== 0){
+
+						database_clusters = Object.entries(data.clusters).map(obj => Object.assign(obj[1], { key: obj[0]}))
+						database_clusters.forEach(cluster => {
+							clusters.push({
+								latitude: cluster.center.lat,
+								longitude: cluster.center.lon,
+								elements: cluster.elements
+							})
 						})
-					})
 
+					}
 					for (var feature_name in data.features){
 
 						var feature = data.features[feature_name]
@@ -104,41 +109,56 @@ class LiveMap extends React.Component{
 	// Method that renders the component
 	render(){
 
-		// Generate clusters markers
-		var cluster_markers = this.state.datas.clusters.map((element, index) => {
+		if (this.state.datas.points)
 
-			var ratio = Math.min(element.elements / configuration.map.max_elements_in_cluster, 1)
-			var size = Math.min(element.elements + 5, 100)
+			// Generate points markers
+			var points_markers = this.state.datas.points.map((element, index) => {
+				return (
+					<Marker
+						latitude={element.latitude} longitude={element.longitude}
+						key={index}
+					>
+						<GiPlainCircle className="point-marker"/>
+					</Marker>
+				)
+			})
 
-			// Get cluster style
-			var style = {
-				color: map_to_gradient(ratio, configuration.map.gradient_colors.first, configuration.map.gradient_colors.second),
-				size: size
-			}
+		else
+		
+			// No marker
+			points_markers = ""
 
-			return (
-				<Marker
-					latitude={element.latitude} longitude={element.longitude}
-					key={index}
-				>
-					<IconContext.Provider value={style}>
-						<GiPlainCircle/>
-					</IconContext.Provider>
-				</Marker>
-			)
-		})
+		if (this.state.datas.clusters)
 
-		// Generate points markers
-		var points_markers = this.state.datas.points.map((element, index) => {
-			return (
-				<Marker
-					latitude={element.latitude} longitude={element.longitude}
-					key={index}
-				>
-					<GiPlainCircle className="point-marker"/>
-				</Marker>
-			)
-		})
+			// Generate clusters markers
+			var cluster_markers = this.state.datas.clusters.map((element, index) => {
+
+				var ratio = Math.min(element.elements / configuration.map.max_elements_in_cluster, 1)
+				var size = Math.min(element.elements + 5, 100)
+
+				// Get cluster style
+				var style = {
+					color: map_to_gradient(ratio, configuration.map.gradient_colors.first, configuration.map.gradient_colors.second),
+					size: size
+				}
+
+				return (
+					<Marker
+						latitude={element.latitude} longitude={element.longitude}
+						key={index}
+					>
+						<IconContext.Provider value={style}>
+							<GiPlainCircle/>
+						</IconContext.Provider>
+					</Marker>
+				)
+			})
+
+		else
+		
+			// No marker
+			points_markers = ""
+
 
 		// Return
 		return (

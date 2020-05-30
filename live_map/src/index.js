@@ -1,7 +1,7 @@
 // Import React libraries
 import React from "react";
 import ReactDOM from "react-dom";
-import * as serviceWorker from "./helpers/serviceWorker";
+import * as serviceWorker from "./helpers/ServiceWorker";
 
 // Import components
 import App from "./App";
