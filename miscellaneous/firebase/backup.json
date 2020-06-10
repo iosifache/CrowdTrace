@@ -1,0 +1,335 @@
+{
+  "features" : {
+    "017329f3-9a2d-4261-8969-bbcd2d98d993" : {
+      "geometry" : {
+        "coordinates" : [ 44.410314889347035, 26.100938390588432 ]
+      },
+      "properties" : {
+        "id" : "017329f3-9a2d-4261-8969-bbcd2d98d993",
+        "is_live" : "false",
+        "timestamp" : 1591799950087
+      },
+      "type" : "Feature"
+    },
+    "02f28ac1-4f78-4e7c-9cf2-bcfb4c854afd" : {
+      "geometry" : {
+        "coordinates" : [ 44.40089560885966, 26.09100007370105 ]
+      },
+      "properties" : {
+        "id" : "02f28ac1-4f78-4e7c-9cf2-bcfb4c854afd",
+        "is_live" : "false",
+        "timestamp" : 1591799950087
+      },
+      "type" : "Feature"
+    },
+    "068ecda6-04e5-47df-983d-81eb6d60e117" : {
+      "geometry" : {
+        "coordinates" : [ 44.45173370176495, 26.093136832557363 ]
+      },
+      "properties" : {
+        "id" : "068ecda6-04e5-47df-983d-81eb6d60e117",
+        "is_live" : "false",
+        "timestamp" : 1591799950087
+      },
+      "type" : "Feature"
+    },
+    "164f9999-1193-4390-9bfa-1878f7d016f6" : {
+      "geometry" : {
+        "coordinates" : [ 44.441623414255304, 26.109753203131174 ]
+      },
+      "properties" : {
+        "id" : "164f9999-1193-4390-9bfa-1878f7d016f6",
+        "is_live" : "false",
+        "timestamp" : 1591799950087
+      },
+      "type" : "Feature"
+    },
+    "200203a4-1cc2-421d-8dca-853a1b993210" : {
+      "geometry" : {
+        "coordinates" : [ 44.407839882317525, 26.095378958004854 ]
+      },
+      "properties" : {
+        "id" : "200203a4-1cc2-421d-8dca-853a1b993210",
+        "is_live" : "false",
+        "timestamp" : 1591799950087
+      },
+      "type" : "Feature"
+    },
+    "2bf0fddd-7c5d-482d-963e-9f3f5fa66ff3" : {
+      "geometry" : {
+        "coordinates" : [ 44.41725626423892, 26.09718726674191 ]
+      },
+      "properties" : {
+        "id" : "2bf0fddd-7c5d-482d-963e-9f3f5fa66ff3",
+        "is_live" : "false",
+        "timestamp" : 1591799950087
+      },
+      "type" : "Feature"
+    },
+    "2c913a3e-19ee-47e2-8c65-784cf18dde82" : {
+      "geometry" : {
+        "coordinates" : [ 44.447125308654755, 26.103666879956325 ]
+      },
+      "properties" : {
+        "id" : "2c913a3e-19ee-47e2-8c65-784cf18dde82",
+        "is_live" : "false",
+        "timestamp" : 1591799950087
+      },
+      "type" : "Feature"
+    },
+    "30063c40-4593-4d90-95e1-8abadcc95a43" : {
+      "geometry" : {
+        "coordinates" : [ 44.4246462273696, 26.13387295219929 ]
+      },
+      "properties" : {
+        "id" : "30063c40-4593-4d90-95e1-8abadcc95a43",
+        "is_live" : "false",
+        "timestamp" : 1591799925914
+      },
+      "type" : "Feature"
+    },
+    "365f7d67-95d3-440a-8508-c0ddd6f93969" : {
+      "geometry" : {
+        "coordinates" : [ 44.406935343306934, 26.110869232159395 ]
+      },
+      "properties" : {
+        "id" : "365f7d67-95d3-440a-8508-c0ddd6f93969",
+        "is_live" : "false",
+        "timestamp" : 1591799925914
+      },
+      "type" : "Feature"
+    },
+    "375e8927-1e10-4f3a-a012-2d858c51cc4b" : {
+      "geometry" : {
+        "coordinates" : [ 44.4196320548428, 26.112857826216686 ]
+      },
+      "properties" : {
+        "id" : "375e8927-1e10-4f3a-a012-2d858c51cc4b",
+        "is_live" : "false",
+        "timestamp" : 1591799925914
+      },
+      "type" : "Feature"
+    },
+    "4089e6f6-1b63-43bb-ab9b-550d30021949" : {
+      "geometry" : {
+        "coordinates" : [ 44.42307743329811, 26.07983346548563 ]
+      },
+      "properties" : {
+        "id" : "4089e6f6-1b63-43bb-ab9b-550d30021949",
+        "is_live" : "false",
+        "timestamp" : 1591799925914
+      },
+      "type" : "Feature"
+    },
+    "45c075fa-e304-44a6-940b-cf6f8e35c2de" : {
+      "geometry" : {
+        "coordinates" : [ 44.43358513939632, 26.09008467206685 ]
+      },
+      "properties" : {
+        "id" : "45c075fa-e304-44a6-940b-cf6f8e35c2de",
+        "is_live" : "false",
+        "timestamp" : 1591799925914
+      },
+      "type" : "Feature"
+    },
+    "5a0b480a-2539-445a-8e69-e8d431e203bc" : {
+      "geometry" : {
+        "coordinates" : [ 44.45451774640378, 26.138158148396958 ]
+      },
+      "properties" : {
+        "id" : "5a0b480a-2539-445a-8e69-e8d431e203bc",
+        "is_live" : "false",
+        "timestamp" : 1591799925914
+      },
+      "type" : "Feature"
+    },
+    "5dac5ffc-a7e9-401b-bd99-692478b57e3a" : {
+      "geometry" : {
+        "coordinates" : [ 44.42270607377464, 26.071082156996663 ]
+      },
+      "properties" : {
+        "id" : "5dac5ffc-a7e9-401b-bd99-692478b57e3a",
+        "is_live" : "false",
+        "timestamp" : 1591799925914
+      },
+      "type" : "Feature"
+    },
+    "65d6626c-f948-476d-b8d7-8c3fa7cb304d" : {
+      "geometry" : {
+        "coordinates" : [ 44.444319180020095, 26.108614301967307 ]
+      },
+      "properties" : {
+        "id" : "65d6626c-f948-476d-b8d7-8c3fa7cb304d",
+        "is_live" : "false",
+        "timestamp" : 1591799925914
+      },
+      "type" : "Feature"
+    },
+    "664af07a-efd5-4121-a6f5-78dabb73bfb0" : {
+      "geometry" : {
+        "coordinates" : [ 44.41160675574115, 26.0779976012776 ]
+      },
+      "properties" : {
+        "id" : "664af07a-efd5-4121-a6f5-78dabb73bfb0",
+        "is_live" : "false",
+        "timestamp" : 1591799925914
+      },
+      "type" : "Feature"
+    },
+    "8e7b9737-6897-4076-b9ca-8904d632499a" : {
+      "geometry" : {
+        "coordinates" : [ 44.44223473477293, 26.075411743335195 ]
+      },
+      "properties" : {
+        "id" : "8e7b9737-6897-4076-b9ca-8904d632499a",
+        "is_live" : "false",
+        "timestamp" : 1591799925914
+      },
+      "type" : "Feature"
+    },
+    "90f6719d-5428-46ad-9189-135ab05f6378" : {
+      "geometry" : {
+        "coordinates" : [ 44.416866416862376, 26.072072623234536 ]
+      },
+      "properties" : {
+        "id" : "90f6719d-5428-46ad-9189-135ab05f6378",
+        "is_live" : "false",
+        "timestamp" : 1591799925914
+      },
+      "type" : "Feature"
+    },
+    "951fbd94-721c-4144-a9a6-eb224888cdf6" : {
+      "geometry" : {
+        "coordinates" : [ 44.43552234844976, 26.08384578773694 ]
+      },
+      "properties" : {
+        "id" : "951fbd94-721c-4144-a9a6-eb224888cdf6",
+        "is_live" : "false",
+        "timestamp" : 1591799925914
+      },
+      "type" : "Feature"
+    },
+    "9be8ab40-94b3-4365-b449-923938a99daf" : {
+      "geometry" : {
+        "coordinates" : [ 44.41306274866393, 26.10315484467613 ]
+      },
+      "properties" : {
+        "id" : "9be8ab40-94b3-4365-b449-923938a99daf",
+        "is_live" : "false",
+        "timestamp" : 1591799925914
+      },
+      "type" : "Feature"
+    },
+    "a62facc1-dbb2-41f0-8961-41a1870bc4d5" : {
+      "geometry" : {
+        "coordinates" : [ 44.42069386156372, 26.082525554470237 ]
+      },
+      "properties" : {
+        "id" : "a62facc1-dbb2-41f0-8961-41a1870bc4d5",
+        "is_live" : "false",
+        "timestamp" : 1591799925914
+      },
+      "type" : "Feature"
+    },
+    "a777eeb3-d117-4a62-a4da-44c361ce23c8" : {
+      "geometry" : {
+        "coordinates" : [ 44.44506055249447, 26.072756923557357 ]
+      },
+      "properties" : {
+        "id" : "a777eeb3-d117-4a62-a4da-44c361ce23c8",
+        "is_live" : "false",
+        "timestamp" : 1591799925914
+      },
+      "type" : "Feature"
+    },
+    "afe56c05-6c5a-43b0-b79d-42524b0ea8d2" : {
+      "geometry" : {
+        "coordinates" : [ 44.44257416378155, 26.094953434851643 ]
+      },
+      "properties" : {
+        "id" : "afe56c05-6c5a-43b0-b79d-42524b0ea8d2",
+        "is_live" : "false",
+        "timestamp" : 1591799925914
+      },
+      "type" : "Feature"
+    },
+    "b9d2d7bb-d611-4437-a179-145f765a8c77" : {
+      "geometry" : {
+        "coordinates" : [ 44.407201493640265, 26.09522922269548 ]
+      },
+      "properties" : {
+        "id" : "b9d2d7bb-d611-4437-a179-145f765a8c77",
+        "is_live" : "false",
+        "timestamp" : 1591799925914
+      },
+      "type" : "Feature"
+    },
+    "bb6b5da4-cf7a-41c0-b6fc-83b907f08af4" : {
+      "geometry" : {
+        "coordinates" : [ 44.409880528491634, 26.078757812492558 ]
+      },
+      "properties" : {
+        "id" : "bb6b5da4-cf7a-41c0-b6fc-83b907f08af4",
+        "is_live" : "false",
+        "timestamp" : 1591799925914
+      },
+      "type" : "Feature"
+    },
+    "beac0727-8ea5-4b8b-aad0-809722d6c642" : {
+      "geometry" : {
+        "coordinates" : [ 44.44223803807817, 26.116069457450198 ]
+      },
+      "properties" : {
+        "id" : "beac0727-8ea5-4b8b-aad0-809722d6c642",
+        "is_live" : "false",
+        "timestamp" : 1591799925914
+      },
+      "type" : "Feature"
+    },
+    "c7a00c35-68ac-4743-bfcd-1e283463f017" : {
+      "geometry" : {
+        "coordinates" : [ 44.406342555561714, 26.085988461186982 ]
+      },
+      "properties" : {
+        "id" : "c7a00c35-68ac-4743-bfcd-1e283463f017",
+        "is_live" : "false",
+        "timestamp" : 1591799925914
+      },
+      "type" : "Feature"
+    },
+    "dee180e7-5c55-40fb-8992-f8b239a51e0d" : {
+      "geometry" : {
+        "coordinates" : [ 44.45393281479501, 26.084570918193567 ]
+      },
+      "properties" : {
+        "id" : "dee180e7-5c55-40fb-8992-f8b239a51e0d",
+        "is_live" : "false",
+        "timestamp" : 1591799925914
+      },
+      "type" : "Feature"
+    },
+    "e1ca4065-24ba-436d-9582-71ce1ef06ade" : {
+      "geometry" : {
+        "coordinates" : [ 44.441848023086905, 26.095919804463477 ]
+      },
+      "properties" : {
+        "id" : "e1ca4065-24ba-436d-9582-71ce1ef06ade",
+        "is_live" : "false",
+        "timestamp" : 1591799925914
+      },
+      "type" : "Feature"
+    },
+    "e90a623c-fbf7-4231-905c-8229adb7d712" : {
+      "geometry" : {
+        "coordinates" : [ 44.434466333841954, 26.116709321851555 ]
+      },
+      "properties" : {
+        "id" : "e90a623c-fbf7-4231-905c-8229adb7d712",
+        "is_live" : "false",
+        "timestamp" : 1591799925914
+      },
+      "type" : "Feature"
+    }
+  },
+  "type" : "CrowdTrace"
+}
