@@ -17,6 +17,7 @@
 	"database": {
 		"configs": {
 			"STS": {
+				"_comment": "Old API token and details, don't waste your time ;)",
 				"apiKey": "AIzaSyDw9Xb_IA4TG7onZ-jkaVPz7QnlZjA4mTA",
 				"authDomain": "crowdtrace-database.firebaseapp.com",
 				"databaseURL": "https://crowdtrace-database.firebaseio.com",

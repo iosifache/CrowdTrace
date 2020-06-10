@@ -172,8 +172,10 @@ class LiveMap extends React.Component{
 
 				</Helmet>
 
-				{/* Map */}
+				{/* Map*/}
 				<div id="MapContainer">
+
+					{/* Old API token, don't waste your time ;) */}
 					<MapGL
 						{...this.state.viewport}
 						mapboxApiAccessToken="pk.eyJ1IjoiaW9zaWZhY2hlIiwiYSI6ImNrOGQ4cndhZTAxeTMzZmx6OGQ1Y3doaWEifQ.pt-PopnReVyjgd9FENGlJA"
@@ -185,6 +187,7 @@ class LiveMap extends React.Component{
 						{points_markers}
 						{cluster_markers}
 					</MapGL>
+
 				</div>
 
 			</div>

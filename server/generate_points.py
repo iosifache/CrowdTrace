@@ -107,6 +107,8 @@ def generate_printable_clusters(pt_list):
 
 
 def plot_points_on_map(cl_list):
+
+    # Old API token, don't waste your time ;)
     mapbox_access_token = "pk.eyJ1IjoiYXBvc3RvbGVzY3VzIiwiYSI6ImNrNjg5MXd0dDAyZ3gzbWxhaTNwOGR1b2oifQ.O-vXy2D0ZN7LUhg0IwIKTQ"
 
     x_array = []
